@@ -1,0 +1,9 @@
+{
+  "name": "belle-creek-test-server",
+  "description": "A simple static server for testing the belle creek website.",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
