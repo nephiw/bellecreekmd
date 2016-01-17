@@ -3,7 +3,10 @@
   "description": "A simple static server for testing the belle creek website.",
   "version": "0.1.0",
   "private": true,
+  "start": "node server.js",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0"
   }
 }

@@ -1,0 +1,22 @@
+mixin navbar(active)
+  .container
+    nav.navbar.navbar-default.green-bar
+      .navbar-header
+        button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navigation-menu', aria-expanded='false')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      #navigation-menu.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-right
+          li(class=active == 'Home' ? 'active' : '')
+            a(href='index.html')
+              span.glyphicon.glyphicon-home(aria-hidden='true') &nbsp;Home
+          li(class=active == 'Contact' ? 'active' : '')
+            a(href='contact.html')
+              span.glyphicon.glyphicon-earphone(aria-hidden='true') &nbsp;Contact
+          li(class=active == 'Documents' ? 'active' : '')
+            a(href='document.html')
+              span.glyphicon.glyphicon-file(aria-hidden='true') &nbsp;Documents
+          .clearfix
+        .clearfix
