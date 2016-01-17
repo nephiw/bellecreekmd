@@ -12,20 +12,20 @@ h2 {
 }
 p {
   font-size: 2em;
-	margin: 0 .5em 2em .5em;
+  margin: 0 0.5em 2em;
 }
 h2 {
   font-size: 4em;
 }
 ul {
-	font-size: 2em;
+  font-size: 2em;
 }
 ul ul {
-	font-size: 1em;
+  font-size: 1em;
 }
 a {
-	font-style: italic;
-	color: #107F6C;
+  font-style: italic;
+  color: #107F6C;
 }
 a:hover {
   color: #1CD5B5;
@@ -34,61 +34,62 @@ a:hover {
   text-align: center;
 }
 .header {
-  padding: 2em 0em;
+  padding: 2em 0;
+  .title-icon.glyphicon {
+    color: #1CD5B5;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .title-label {
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  .title-content {
+    font-size: 1.25em;
+    margin-bottom: 12px;
+  }
 }
-.header .title-icon.glyphicon {
-  color: #1CD5B5;
-  font-size: 1.5em;
-  display: inline-block;
-  margin-right: 10px;
+.contact {
+  .person {
+    display: block;
+    margin-left: 1em;
+  }
+  .company {
+    display: block;
+    margin-left: 1.5em;
+  }
+  .address {
+    display: block;
+    margin-left: 1.5em;
+  }
+  .phone {
+    display: block;
+    margin-left: 1.5em;
+  }
+  .email {
+    display: block;
+    margin-left: 1.5em;
+  }
+  .website {
+    display: block;
+    margin-left: 1.5em;
+  }
 }
-.header .title-label {
-  font-size: 1.5em;
-  display: inline-block;
-}
-.header .title-content {
-  font-size: 1.25em;
-  margin-bottom: 12px;
-}
-.contact .person {
-  display: block;
-  margin-left: 1em;
-}
-.contact .company {
-  display: block;
-  margin-left: 1.5em;
-}
-.contact .address {
-  display: block;
-  margin-left: 1.5em;
-}
-.contact .phone {
-  display: block;
-  margin-left: 1.5em;
-}
-.contact .email {
-  display: block;
-  margin-left: 1.5em;
-}
-.contact .website {
-  display: block;
-  margin-left: 1.5em;
-}
-
-
 nav.navbar.navbar-default.green-bar {
   background-color: #1CD5B5;
-  padding: 0em 0em;
+  padding: 0;
   margin: 0;
 }
 .header_nav {
   background-color: #1CD5B5;
 }
 .navbar-default .navbar-nav>li {
-  padding: 0px;
+  padding: 0;
   text-align: center;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a {
   padding: 16px 52px;
   color: #fff !important;
   font-weight: 500;
@@ -96,12 +97,15 @@ nav.navbar.navbar-default.green-bar {
   background: #1CD5B5;
   border-right: 1px dotted #fff;
 }
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
   background: #020202 !important;
   border-radius: 2px;
   transition: 0.6s all;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   background: #020202 !important;
 }
 .glyphicon {
@@ -111,7 +115,7 @@ nav.navbar.navbar-default.green-bar {
 }
 .navbar-right {
   float: none!important;
-  margin-right: 0px;
+  margin-right: 0;
 }
 .navbar-default {
   background-color: #fff;
@@ -122,29 +126,23 @@ nav.navbar.navbar-default.green-bar {
   min-height: 36px;
 }
 .navbar-collapse {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 0;
+  padding-left: 0;
 }
 .logo h1 a {
   color: #020202;
   text-decoration: none;
 }
-
 /*-- footer --*/
-
 .footer p {
   color: #7F8D98;
-  font-size: 1em;
-  line-height: 1.8em;
+  font-size: 1.5em;
+  line-height: 1.2em;
   margin: 0.3em 0;
 }
 .footer p a {
   color: #7F8D98;
   text-decoration: none;
-}
-address {
-  color: #7F8D98;
-  line-height: 1.8em;
 }
 .footer {
   padding: 2em 0;
@@ -154,20 +152,20 @@ address {
   font-size: 2em;
   color: #1CD5B5;
   font-weight: 700;
-  font-family: Overlock-Regular;
   padding: 0 0 1em;
 }
 .copyright {
   text-align: center;
   padding: 2em 0 0;
 }
-
+.footer address {
+  font-size: 1.5em;
+  color: #7F8D98;
+}
 /*-- footer --*/
-
-
 /*--Typography--*/
-
-.xs h3, h3.m_1 {
+.xs h3,
+h3.m_1 {
   color: #000;
   font-size: 1.7em;
   font-weight: 300;
@@ -188,7 +186,11 @@ address {
 .alert {
   font-size: 0.85em;
 }
-h1.t-button, h2.t-button, h3.t-button, h4.t-button, h5.t-button {
+h1.t-button,
+h2.t-button,
+h3.t-button,
+h4.t-button,
+h5.t-button {
   line-height: 1.8em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -216,33 +218,25 @@ h3.title {
   font-family: Overlock-Regular;
 }
 @media(max-width:1024px) {
-  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a {
     padding: 16px 34px ! important;
   }
 }
-
 /*--responsive--*/
-
 @media(max-width:768px) {
-  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a {
     padding: 16px 16px ! important;
   }
   .in-contact {
     margin: 1em 0;
   }
-  address {
-    font-size: 0.9em;
-  }
-  .footer p {
-    font-size: 0.9em;
-  }
   body {
     font-size: 10px;
   }
 }
-
 /*--responsive--*/
-
 @media(max-width:767px) {
   .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff ! important;
@@ -250,24 +244,22 @@ h3.title {
   .navbar-default .navbar-toggle {
     border-color: #fff ! important;
   }
-  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
     background-color: #1CD5B5 ! important;
   }
-  .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a {
+  .navbar-default .navbar-nav>li>a:focus,
+  .navbar-default .navbar-nav>li>a {
     border-right: none ! important;
   }
 }
-
 /*--responsive--*/
-
 @media(max-width:640px) {
   .header {
-    padding: 1em 0em;
+    padding: 1em 0;
   }
 }
-
 /*--responsive--*/
-
 @media(max-width:480px) {
   .footer h4 {
     font-size: 1.7em;
@@ -281,12 +273,10 @@ h3.title {
     padding: -1px ! important;
   }
 }
-
 /*--responsive--*/
-
 @media(max-width:320px) {
   .header {
-    padding: 0.5em 0em;
+    padding: 0.5em 0;
   }
   .callbacks_nav.next {
     left: auto;
@@ -315,11 +305,11 @@ h3.title {
     padding: 0.7em;
   }
   .contact-bottom-top {
-    margin: 1em 0px 0;
-  }
-  .contact-bottom-top textarea {
-    padding: 0.7em;
-    min-height: 150px;
+    margin: 1em 0 0;
+    & textarea {
+      padding: 0.7em;
+      min-height: 150px;
+    }
   }
   .contact {
     padding: 2em 0 0;

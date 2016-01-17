@@ -1,12 +1,13 @@
 {
-  "name": "belle-creek-test-server",
-  "description": "A simple static server for testing the belle creek website.",
+  "name": "belle-creek",
+  "description": "A simple static server and site generator for the belle creek website.",
   "version": "0.1.0",
   "private": true,
   "start": "node server.js",
   "dependencies": {
     "express": "^4.13.3",
     "gulp": "^3.9.0",
-    "gulp-jade": "^1.1.0"
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.5"
   }
 }
