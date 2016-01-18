@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
   jade = require('gulp-jade'),
-  less = require('gulp-less');
+  less = require('gulp-less'),
+  checkCSS = require( 'gulp-check-unused-css' );
 
 gulp.task('default', ['templates', 'less', 'watch']);
 
