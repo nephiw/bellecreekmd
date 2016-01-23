@@ -1,0 +1,24 @@
+extends ./includes/layout.jade
+
+block content
+  .header_nav
+    +navbar('Minutes')
+  section.introduction
+    .container
+      h2.section-title Meetings
+      p
+        | The Covenant Enforcement Committee (CEC) meets once a month on the third wednesday. These meetings are open
+        | to the public and we encourage the home owners join us if they want to hear what is going on or express 
+        | some other concern.
+      p The next meeting is on 
+        span.next-meeting The third Wednesday of the month 
+        | &nbsp;at 6:00 pm.
+      h2.section-title Minutes
+      p Each Meetings Minutes
+        each min in config.minutes
+          div.meeting= min
+      
+        
+        
+block append scripts
+  script(type='text/javascript', src='js/minutes.js')
