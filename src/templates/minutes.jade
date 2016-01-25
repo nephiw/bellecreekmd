@@ -15,10 +15,8 @@ block content
         | &nbsp;at 6:00 pm.
       h2.section-title Minutes
       p Each Meetings Minutes
-        each min in config.minutes
-          div.meeting= min
-      
-        
-        
+        //- each fn in config.minutes
+        //-   include:markdown fn
+
 block append scripts
   script(type='text/javascript', src='js/minutes.js')
