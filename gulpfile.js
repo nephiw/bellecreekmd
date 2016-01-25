@@ -3,13 +3,14 @@ const gulp = require('gulp'),
       del = require('del'),
       jade = require('gulp-jade'),
       less = require('gulp-less'),
-      babel = require('gulp-babel');
+      babel = require('gulp-babel'),
+      markdown = require('gulp-markdown');
 
-gulp.task('default', ['clean', 'templates', 'less', 'babel', 'copy', 'watch']);
+gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel', 'minutes']);
 
 gulp.task('watch', function() {
   gulp.watch('src/templates/**/*.jade', ['templates']);
-  gulp.watch('src/templates/**/*.html', ['templates']);
+  gulp.watch('src/minutes/**/*.md', ['minutes']);
   gulp.watch('src/less/**/*.less', ['less']);
   gulp.watch('src/js/**/*.js', ['babel']);
 });
@@ -77,6 +78,13 @@ gulp.task('babel', function() {
     }))
     .on('error', logError)
     .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('minutes', function () {
+	return gulp.src('src/minutes/**/*.md')
+		.pipe(markdown())
+    // Need to either make pages or add to single page.
+		.pipe(gulp.dest('dist/minutes'));
 });
 
 gulp.task('copy', function () {
