@@ -1,7 +1,6 @@
 @teal: #1CD5B5;
 @dark-teal: #107F6C;
 @white: #FFFFFF;
-
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +56,11 @@ a:hover {
     display: block;
     margin-left: 1em;
   }
-  .company, .address, .phone, .email, .website {
+  .company,
+  .address,
+  .phone,
+  .email,
+  .website {
     display: block;
     margin-left: 1.5em;
   }
@@ -119,7 +122,6 @@ nav.navbar.navbar-default.green-bar {
 .footer {
   padding: 2em 0;
   background-color: #3b444b;
-
   a {
     color: @dark-teal;
   }
@@ -140,7 +142,23 @@ nav.navbar.navbar-default.green-bar {
     color: #7F8D98;
   }
 }
-
+.minutes {
+  p {
+    color: #444;
+    margin-bottom: 1em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h1 + h1 {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin: 28px 0 0;
+    text-align: center;
+  }
+}
 @media(max-width:1024px) {
   .navbar-default .navbar-nav>li>a:focus,
   .navbar-default .navbar-nav>li>a {

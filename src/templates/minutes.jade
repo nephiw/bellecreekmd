@@ -14,9 +14,8 @@ block content
         span.next-meeting The third Wednesday of the month 
         | &nbsp;at 6:00 pm.
       h2.section-title Minutes
-      p Each Meetings Minutes
-        //- each fn in config.minutes
-        //-   include:markdown fn
+      div.minutes
+        include:markdown ./minutes.md
 
 block append scripts
   script(type='text/javascript', src='js/minutes.js')

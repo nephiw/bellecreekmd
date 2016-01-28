@@ -4,9 +4,9 @@ const gulp = require('gulp'),
       jade = require('gulp-jade'),
       less = require('gulp-less'),
       babel = require('gulp-babel'),
-      markdown = require('gulp-markdown');
+      concat = require('gulp-concat');
 
-gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel', 'minutes']);
+gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
 
 gulp.task('watch', function() {
   gulp.watch('src/templates/**/*.jade', ['templates']);
@@ -54,7 +54,7 @@ function onFileContent(filename, content) {
   });
 }
 
-gulp.task('templates', function() {
+gulp.task('templates', ['minutes'], function() {
   return gulp.src('./src/templates/*.jade')
     .pipe(jade({
       locals: jadeLocals,
@@ -82,9 +82,8 @@ gulp.task('babel', function() {
 
 gulp.task('minutes', function () {
 	return gulp.src('src/minutes/**/*.md')
-		.pipe(markdown())
-    // Need to either make pages or add to single page.
-		.pipe(gulp.dest('dist/minutes'));
+    .pipe(concat('minutes.md'))
+		.pipe(gulp.dest('src/templates'));
 });
 
 gulp.task('copy', function () {
@@ -93,5 +92,5 @@ gulp.task('copy', function () {
 });
 
 gulp.task('clean', function(cb) {
-  del(['dist'], cb);
+  del(['dist', 'src/templates/minutes.md'], cb);
 });
