@@ -87,7 +87,7 @@ gulp.task('minutes', function () {
 });
 
 gulp.task('copy', function () {
-  return gulp.src('vendor/**/*')
+  return gulp.src('lib/**/*')
     .pipe(gulp.dest('dist'));
 });
 
