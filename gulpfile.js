@@ -4,7 +4,10 @@ const gulp = require('gulp'),
       jade = require('gulp-jade'),
       less = require('gulp-less'),
       babel = require('gulp-babel'),
-      concat = require('gulp-concat');
+      concat = require('gulp-concat'),
+      uservars = require('./uservars.json');
+
+console.log('uservars', uservars);
 
 gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
 
@@ -22,42 +25,10 @@ function logError(error) {
   }
 }
 
-function readFiles(dirname, onFileContent) {
-  fs.readdir(dirname, function(err, filenames) {
-    if (err) {
-      logError(err);
-      return;
-    }
-    filenames.forEach(function(filename) {
-      fs.readFile(dirname + filename, 'utf-8', function(err, content) {
-        if (err) {
-          logError(err);
-          return;
-        }
-        onFileContent(filename, content);
-      });
-    });
-  });
-}
-
-var jadeLocals = {
-  config: {
-    minutes: [__dirname + '/src/minutes/2015-01-21.md']
-  }
-};
-
-function onFileContent(filename, content) {
-  var data = {};
-  jadeLocals.config.minutes.push({
-    filename: filename,
-    content: content
-  });
-}
-
 gulp.task('templates', ['minutes'], function() {
   return gulp.src('./src/templates/*.jade')
     .pipe(jade({
-      locals: jadeLocals,
+      locals: { config: uservars },
       pretty: true
     }))
     .on('error', logError)
