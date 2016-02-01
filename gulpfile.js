@@ -7,8 +7,6 @@ const gulp = require('gulp'),
       concat = require('gulp-concat'),
       uservars = require('./uservars.json');
 
-console.log('uservars', uservars);
-
 gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
 
 gulp.task('watch', function() {
