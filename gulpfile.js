@@ -79,14 +79,20 @@ gulp.task('minutes', function () {
       }
 
       if (file.isStream()) {
-        return cb(new gutil.PluginError('gulp-less', 'Streaming not supported'));
+        return cb(new PluginError('gulp-less', 'Streaming not supported'));
       }
-      file.contents = Buffer.concat([ new Buffer('<div class="meeting-mintues">\n'), file.contents, new Buffer('\n</div>') ]);
+
+      const fileName = _.last(file.path.split('/')),
+            id = fileName.split('.')[0];
+      file.contents = Buffer.concat([
+        new Buffer('<div id="' + id + '" class="meeting-mintues">\n'),
+        file.contents,
+        new Buffer('\n</div>')
+      ]);
       this.push(file);
-      cb();
+      return cb();
     }, function endStream (cb) {
-      cb();
-      return;
+      return cb();
     }))
     .pipe(concat('minutes.html'))
 		.pipe(gulp.dest('src/templates'));
