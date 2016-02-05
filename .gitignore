@@ -1,5 +1,5 @@
 .idea
 dist
 node_modules
-src/templates/minutes.md
+src/templates/minutes.html
 uservars.json

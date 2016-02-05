@@ -1,11 +1,16 @@
 const gulp = require('gulp'),
       fs = require('fs'),
+      _ = require('lodash'),
       del = require('del'),
       jade = require('gulp-jade'),
       less = require('gulp-less'),
       babel = require('gulp-babel'),
       concat = require('gulp-concat'),
       jshint = require('gulp-jshint'),
+      marked = require('gulp-markdown'),
+      gutil = require('gulp-util'),
+      through = require('through2'),
+      sort = require('sort-stream'),
       uservars = require('./uservars.json');
 
 gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
@@ -58,7 +63,31 @@ gulp.task('babel', function() {
 
 gulp.task('minutes', function () {
 	return gulp.src('src/minutes/**/*.md')
-    .pipe(concat('minutes.md'))
+    .pipe(sort(function reverse(left, right) {
+      const leftName = _.last(left.path.split('/')),
+            rightName = _.last(right.path.split('/'));
+
+      if(leftName > rightName) return -1;
+      if(leftName < rightName) return 1;
+      return 0;
+    }))
+    .pipe(marked())
+    .pipe(through.obj(function bufferedContents(file, enc, cb) {
+      if (file.isNull()) {
+        return cb(null, file);
+      }
+
+      if (file.isStream()) {
+        return cb(new gutil.PluginError('gulp-less', 'Streaming not supported'));
+      }
+      file.contents = Buffer.concat([ new Buffer('<div class="meeting-mintues">\n'), file.contents, new Buffer('\n</div>') ]);
+      this.push(file);
+      cb();
+    }, function endStream (cb) {
+      cb();
+      return;
+    }))
+    .pipe(concat('minutes.html'))
 		.pipe(gulp.dest('src/templates'));
 });
 
