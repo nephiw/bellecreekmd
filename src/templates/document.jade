@@ -15,13 +15,13 @@ block content
         | Here are documents that homeowners may need access to:
         ul
           li
-            a(href='assets/BCDesignGuidelines.pdf', target='_blank')
+            a(href='assets/BCDesignGuidelines.pdf', target='_blank').dl-document
               | Belle Creek Design Guidelines and Application Review Procedures for Home Improvement and Landscaping
             ul
               li These are the guidelines all homeowners agreed to follow when they moved into this community. It describes what 
                 | will and will not be approved for changes to your home or property.
           li
-            a(href='assets/Design_and_Improvement_Request_Form.pdf', target='_blank') 
+            a(href='assets/Design_and_Improvement_Request_Form.pdf', target='_blank').dl-document 
               | Design and Improvement Request Form
             ul
               li This is the form that must be filled out if you want to make changes to the exterior of your home or your 
@@ -31,12 +31,16 @@ block content
             ul
               li This is the document which describes the powers and limitations of Belle Creek Metropolitan District No 1.
           li
-            a(href='assets/Signed_Resolution_for_Covenant_Enforcement_2014.pdf', target='_blank') 
+            a(href='assets/Signed_Resolution_for_Covenant_Enforcement_2014.pdf', target='_blank').dl-document 
               | Resolution Regarding Policies and Procedures for Covenant Enforcement
             ul
               li Defines the rules and covenant enforcement procedures that are observed by the Covenant Enforcement Committee
           li
-            a(href='assets/Belle_Creek_HOA_Covenant_Violation_Book__03-04-13_.pdf', target='_blank') Covenant enforcement guidebook
+            a(href='assets/Belle_Creek_HOA_Covenant_Violation_Book__03-04-13_.pdf', target='_blank').dl-document
+              | Covenant enforcement guidebook
             ul
               li A guide to help you understand some of the most common violations. It has photos to help illustrate some common problems.
       p#snowremoval.footnote *Alleys are plowed when snow accumulation exceeds 6 inches
+      
+block append scripts
+  script(type='text/javascript', src='js/document.js')      
