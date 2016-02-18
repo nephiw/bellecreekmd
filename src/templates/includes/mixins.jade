@@ -11,15 +11,19 @@ mixin navbar(active)
         ul.nav.navbar-nav.navbar-right
           li(class=active == 'Home' ? 'active' : '')
             a(href='index.html')
-              span.glyphicon.glyphicon-home(aria-hidden='true') &nbsp;Home
+              span.glyphicon.glyphicon-home(aria-hidden='true')
+              span.nav-title &nbsp;Home
           li(class=active == 'Contact' ? 'active' : '')
             a(href='contact.html')
-              span.glyphicon.glyphicon-earphone(aria-hidden='true') &nbsp;Contact
+              span.glyphicon.glyphicon-earphone(aria-hidden='true')
+              span.nav-title &nbsp;Contact
           li(class=active == 'Documents' ? 'active' : '')
             a(href='document.html')
-              span.glyphicon.glyphicon-file(aria-hidden='true') &nbsp;Documents
+              span.glyphicon.glyphicon-file(aria-hidden='true')
+              span.nav-title &nbsp;Documents
           li(class=active == 'CEC' ? 'active' : '')
             a(href='cec.html')
-              span.glyphicon.glyphicon-calendar(aria-hidden='true') &nbsp;CEC
+              span.glyphicon.glyphicon-calendar(aria-hidden='true')
+              span.nav-title &nbsp;CEC
           .clearfix
         .clearfix
