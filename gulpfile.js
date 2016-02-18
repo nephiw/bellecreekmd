@@ -5,6 +5,7 @@ const gulp = require('gulp'),
       less = require('gulp-less'),
       babel = require('gulp-babel'),
       concat = require('gulp-concat'),
+      jshint = require('gulp-jshint'),
       uservars = require('./uservars.json');
 
 gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
@@ -13,7 +14,7 @@ gulp.task('watch', function() {
   gulp.watch('src/templates/**/*.jade', ['templates']);
   gulp.watch('src/minutes/**/*.md', ['minutes']);
   gulp.watch('src/less/**/*.less', ['less']);
-  gulp.watch('src/js/**/*.js', ['babel']);
+  gulp.watch('src/js/**/*.js', ['jshint', 'babel']);
 });
 
 function logError(error) {
@@ -38,6 +39,12 @@ gulp.task('less', function() {
     .pipe(less())
     .on('error', logError)
     .pipe(gulp.dest('./dist/css'));
+});
+
+gulp.task('jshint', function () {
+  return gulp.src('src/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'))
 });
 
 gulp.task('babel', function() {
