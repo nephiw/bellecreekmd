@@ -42,5 +42,5 @@
     }
 
     $('.next-meeting').text(`${month} ${day}, ${year}`);
-  })
+  });
 }());
