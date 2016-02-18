@@ -2,40 +2,41 @@
   'use strict';
 
   function getThirdWednesdayOfMonth(date) {
-    var firstDayOfMonth = new Date(date.getTime());
+    let firstDayOfMonth = new Date(date.getTime());
     firstDayOfMonth.setDate(1);
 
-    var firstDayOfWeek = firstDayOfMonth.getDay();
-    var firstWednesday = 1 + (3 - firstDayOfWeek + 7) % 7;
+    const firstDayOfWeek = firstDayOfMonth.getDay(),
+          firstWednesday = 1 + (3 - firstDayOfWeek + 7) % 7;
     return firstWednesday + 14;
   }
 
   $(() => {
-    const monthNames = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
-    ];
-    var dateOfNextMeeting,
-        thirdWednesday,
+    const MEETING_START_TIME = 18, // 24 hour time
+          MONTH_NAMES = [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+          ];
+
+    let thirdWednesday,
         month,
         today = new Date(),
         year = today.getFullYear(),
         day = getThirdWednesdayOfMonth(today);
 
-    if (today.getDate() < day) {
-      month = monthNames[today.getMonth()]
+    if (today.getDate() < day || (today.getDate() === day && today.getHours() < MEETING_START_TIME)) {
+      month = MONTH_NAMES[today.getMonth()];
     } else {
-      month = monthNames[today.getMonth() + 1]
+      month = MONTH_NAMES[today.getMonth() + 1];
       today.setMonth(today.getMonth() + 1);
       day = getThirdWednesdayOfMonth(today);
     }
