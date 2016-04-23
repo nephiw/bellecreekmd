@@ -85,7 +85,7 @@ gulp.task('minutes', function () {
       const fileName = _.last(file.path.split('/')),
             id = fileName.split('.')[0];
       file.contents = Buffer.concat([
-        new Buffer('<div id="' + id + '" class="meeting-mintues">\n'),
+        new Buffer('<div id="' + id + '" class="meeting-minutes">\n'),
         file.contents,
         new Buffer('\n</div>')
       ]);
