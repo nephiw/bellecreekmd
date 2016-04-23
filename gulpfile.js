@@ -1,12 +1,18 @@
 const gulp = require('gulp'),
       fs = require('fs'),
+      _ = require('lodash'),
       del = require('del'),
       jade = require('gulp-jade'),
       less = require('gulp-less'),
       babel = require('gulp-babel'),
       concat = require('gulp-concat'),
       jshint = require('gulp-jshint'),
-      uservars = require('./uservars.json');
+      marked = require('gulp-markdown'),
+      gutil = require('gulp-util'),
+      through = require('through2'),
+      sort = require('sort-stream'),
+      uservars = require('./uservars.json'),
+      PluginError = gutil.PluginError;
 
 gulp.task('default', ['clean', 'copy', 'templates', 'less', 'babel']);
 
@@ -58,7 +64,37 @@ gulp.task('babel', function() {
 
 gulp.task('minutes', function () {
 	return gulp.src('src/minutes/**/*.md')
-    .pipe(concat('minutes.md'))
+    .pipe(sort(function reverse(left, right) {
+      const leftName = _.last(left.path.split('/')),
+            rightName = _.last(right.path.split('/'));
+
+      if(leftName > rightName) return -1;
+      if(leftName < rightName) return 1;
+      return 0;
+    }))
+    .pipe(marked())
+    .pipe(through.obj(function bufferedContents(file, enc, cb) {
+      if (file.isNull()) {
+        return cb(null, file);
+      }
+
+      if (file.isStream()) {
+        return cb(new PluginError('gulp-less', 'Streaming not supported'));
+      }
+
+      const fileName = _.last(file.path.split('/')),
+            id = fileName.split('.')[0];
+      file.contents = Buffer.concat([
+        new Buffer('<div id="' + id + '" class="meeting-minutes">\n'),
+        file.contents,
+        new Buffer('\n</div>')
+      ]);
+      this.push(file);
+      return cb();
+    }, function endStream (cb) {
+      return cb();
+    }))
+    .pipe(concat('minutes.html'))
 		.pipe(gulp.dest('src/templates'));
 });
 
