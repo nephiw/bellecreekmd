@@ -1,6 +1,7 @@
 .idea
 dist
 build
+public
 node_modules
 src/templates/minutes.html
 uservars.json
