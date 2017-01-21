@@ -1,0 +1,46 @@
+<div class="header_nav">
+  <div class="container">
+    <nav class="navbar navbar-default green-bar">
+      <div class="navbar-header">
+        <button type="button"
+                data-toggle="collapse"
+                data-target="#navigation-menu"
+                aria-expanded="false"
+                class="navbar-toggle collapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      </div>
+      <div id="navigation-menu" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/cec.html">
+              <span aria-hidden="true" class="glyphicon glyphicon-calendar"></span>
+              <span class="nav-title">&nbsp;CEC</span>
+            </a>
+          </li>
+          {{#if this.previous.path}}
+          <li>
+            <a href="{{ link this.previous.path }}">
+              <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+              <span class="nav-title">Previous: {{ this.previous.title }}</span>
+            </a>
+          </li>
+          {{/if}}
+          {{#if this.next.path }}
+          <li>
+            <a href="{{ link this.next.path }}">
+              <span class="nav-title">Next: {{ this.next.title }}</span>
+              <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </li>
+          {{/if}}
+          <div class="clearfix"></div>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+    </av>
+  </div>
+</div>
