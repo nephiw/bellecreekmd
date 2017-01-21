@@ -1,8 +1,10 @@
 var Metalsmith = require('metalsmith');
 var Handlebars = require('handlebars');
+var gatoken = require('./uservars.json').gatoken;
 
 var collections = require('metalsmith-collections');
 var layouts = require('metalsmith-layouts');
+var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdown');
 var less = require('metalsmith-less');
 var babel = require('metalsmith-babel');
@@ -12,13 +14,16 @@ var copy = require('metalsmith-static');
 var ignore = require('metalsmith-ignore');
 
 Handlebars.registerHelper('link', function (path) {
-  return '/' + path;
+  return '/' + path.replace('/index.html', '');
 });
 
 Metalsmith(__dirname)
   .source('./src')
   .destination('./public')
   .clean(true)
+  .metadata({
+    gatoken: gatoken
+  })
   .use(less())
   .use(babel({
     presets: ['es2015']
@@ -29,8 +34,17 @@ Metalsmith(__dirname)
     pattern: 'minutes/:date',
     date: 'YYYYMM'
   }))
-  .use(collections())
+  .use(collections({
+    minutes: {
+      sortBy: 'date',
+      reverse: true
+    }
+  }))
   .use(layouts({
+    engine: 'handlebars',
+    partials: 'partials'
+  }))
+  .use(inplace({
     engine: 'handlebars'
   }))
   .use(copy({
