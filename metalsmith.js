@@ -11,7 +11,8 @@ var babel = require('metalsmith-babel');
 var permalinks = require('metalsmith-permalinks');
 var copy = require('metalsmith-static');
 var ignore = require('metalsmith-ignore');
-var browserSync = require('metalsmith-browser-sync');
+var watch = require('metalsmith-watch');
+var serve = require('metalsmith-serve');
 var debug = require('metalsmith-debug');
 
 var gatoken = require('./uservars.json').gatoken;
@@ -58,10 +59,15 @@ var ms = Metalsmith(__dirname)
   .use(ignore('less/*'));
 
 if (options.serve) {
-  ms.use(browserSync({
-    server: './public',
-    files: ['src/**/*', 'layouts/**/*', 'partials/**/*', 'lib/**/*']
+  ms.use(watch({
+    paths: {
+      '${source}/**/*': true,
+      'layouts/**/*': '**/*',
+      'partials/**/*': '**/*',
+      'lib/**/*': '**/*'
+    }
   }));
+  ms.use(serve());
 }
 
 ms.build(function (err) {
