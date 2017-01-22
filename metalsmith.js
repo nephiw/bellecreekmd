@@ -1,6 +1,6 @@
 var Metalsmith = require('metalsmith');
 var Handlebars = require('handlebars');
-var gatoken = require('./uservars.json').gatoken;
+var minimist = require('minimist');
 
 var collections = require('metalsmith-collections');
 var layouts = require('metalsmith-layouts');
@@ -9,15 +9,19 @@ var markdown = require('metalsmith-markdown');
 var less = require('metalsmith-less');
 var babel = require('metalsmith-babel');
 var permalinks = require('metalsmith-permalinks');
-var debug = require('metalsmith-debug');
 var copy = require('metalsmith-static');
 var ignore = require('metalsmith-ignore');
+var browserSync = require('metalsmith-browser-sync');
+var debug = require('metalsmith-debug');
+
+var gatoken = require('./uservars.json').gatoken;
+var options = minimist(process.argv.slice(2));
 
 Handlebars.registerHelper('link', function (path) {
   return '/' + path.replace('/index.html', '');
 });
 
-Metalsmith(__dirname)
+var ms = Metalsmith(__dirname)
   .source('./src')
   .destination('./public')
   .clean(true)
@@ -51,8 +55,16 @@ Metalsmith(__dirname)
     src: 'lib',
     dest: '.'
   }))
-  .use(ignore('less/*'))
-  .build(function (err) {
-    if (err) throw err;
-    else console.log('Complete!');
-  });
+  .use(ignore('less/*'));
+
+if (options.serve) {
+  ms.use(browserSync({
+    server: './public',
+    files: ['src/**/*', 'layouts/**/*', 'partials/**/*', 'lib/**/*']
+  }));
+}
+
+ms.build(function (err) {
+  if (err) throw err;
+  else console.log('Complete!');
+});
