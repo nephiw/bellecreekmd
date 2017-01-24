@@ -18,21 +18,21 @@
           <li>
             <a href="/cec.html">
               <span aria-hidden="true" class="glyphicon glyphicon-calendar"></span>
-              <span class="nav-title">&nbsp;CEC</span>
+              <span class="nav-title"> CEC</span>
             </a>
           </li>
-          {{#if this.previous.path}}
-          <li>
-            <a href="{{ link this.previous.path }}">
-              <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
-              <span class="nav-title">Previous: {{ this.previous.title }}</span>
-            </a>
-          </li>
-          {{/if}}
           {{#if this.next.path }}
           <li>
             <a href="{{ link this.next.path }}">
-              <span class="nav-title">Next: {{ this.next.title }}</span>
+              <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+              <span class="nav-title">Older: {{ this.next.title }}</span>
+            </a>
+          </li>
+          {{/if}}
+          {{#if this.previous.path}}
+          <li>
+            <a href="{{ link this.previous.path }}">
+              <span class="nav-title">Newer: {{ this.previous.title }}</span>
               <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
             </a>
           </li>
