@@ -36,12 +36,22 @@ var ms = Metalsmith(__dirname)
   .use(markdown())
   .use(permalinks({
     relative: false,
-    pattern: 'minutes/:date',
-    date: 'YYYYMM'
+    date: 'YYYYMM',
+    linksets: [{
+      match: { collection: 'minutes' },
+      pattern: 'minutes/:date'
+    },{
+      match: { collection: 'notices' },
+      pattern: 'notices/:title'
+    }]
   }))
   .use(collections({
     minutes: {
       sortBy: 'date',
+      reverse: true
+    },
+    notices: {
+      sortBy: 'data',
       reverse: true
     }
   }))

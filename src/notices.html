@@ -1,0 +1,21 @@
+---
+title: Notices and Events
+layout: page.html
+draft: false
+permalink: false
+---
+{{> nav notice=true }}
+<section class="introduction">
+  <div class="container">
+    <h2 class="section-title">Notices and Events</h2>
+    <ul class="notices-posts">
+      {{#each collections.notices}}
+        <li>
+          <a href="{{ path }}">{{ title }}</a>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+{{> footer }}
+{{> scripts }}
