@@ -6,6 +6,7 @@ var collections = require('metalsmith-collections');
 var layouts = require('metalsmith-layouts');
 var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdown');
+var excerpts = require('metalsmith-excerpts');
 var less = require('metalsmith-less');
 var babel = require('metalsmith-babel');
 var permalinks = require('metalsmith-permalinks');
@@ -34,6 +35,7 @@ var ms = Metalsmith(__dirname)
     presets: ['es2015']
   }))
   .use(markdown())
+  .use(excerpts())
   .use(permalinks({
     relative: false,
     date: 'YYYYMM',

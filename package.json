@@ -14,6 +14,7 @@
     "metalsmith-babel": "^4.1.0",
     "metalsmith-collections": "^0.9.0",
     "metalsmith-debug": "^1.1.0",
+    "metalsmith-excerpts": "^1.1.0",
     "metalsmith-ignore": "^0.1.2",
     "metalsmith-in-place": "1.4.4",
     "metalsmith-layouts": "^1.7.0",

@@ -8,13 +8,18 @@ permalink: false
 <section class="introduction">
   <div class="container">
     <h2 class="section-title">Notices and Events</h2>
-    <ul class="notices-posts">
+    <div class="notices">
       {{#each collections.notices}}
-        <li>
-          <a href="{{ path }}">{{ title }}</a>
-        </li>
+        <div class="notice"> 
+          <h3><a href="{{ link path }}">{{ title }}</a></h3>
+          <div class="excerpt">
+            {{{ excerpt }}}
+            <a class="pull-right" href="{{ link path }}">...continue reading</a>
+            <div class="clearfix"></div>
+          </div>
+        </div>
       {{/each}}
-    </ul>
+    </div>
   </div>
 </section>
 {{> footer }}
