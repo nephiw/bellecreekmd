@@ -53,7 +53,7 @@ var ms = Metalsmith(__dirname)
       reverse: true
     },
     notices: {
-      sortBy: 'data',
+      sortBy: 'date',
       reverse: true
     }
   }))

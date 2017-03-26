@@ -2,7 +2,7 @@
 title: Dissolution
 layout: notices.html
 collection: notices
-date: 2017-02-16
+date: 2016-02-16
 draft: false
 ---
 # Masters Association Dissolution

@@ -16,4 +16,6 @@ They will be replacing the fence running along property lines adjacent to Belle 
 2. To create a fire break to enhance the safety of the neighborhood from potential grass fires.
 3. To meet perimeter regulations for operational reservoirs.
  
-Residents can expect an increase in construction traffic and a visible presence of construction at the site. Feel free to contact Laurie Tatlock if you have questions. <a href="tel:+3036499857">303-649-9857</a> <a href="mailto:laurie@mulhernmre.com">laurie@mulhernmre.com</a>
+Residents can expect an increase in construction traffic and a visible presence of construction at the site. Feel free to contact Laurie Tatlock if you have questions.<br/ >
+<a href="tel:+3036499857">303-649-9857</a><br />
+<a href="mailto:laurie@mulhernmre.com">laurie@mulhernmre.com</a>
