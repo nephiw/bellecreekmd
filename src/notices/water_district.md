@@ -18,4 +18,4 @@ They will be replacing the fence running along property lines adjacent to Belle 
  
 Residents can expect an increase in construction traffic and a visible presence of construction at the site. Feel free to contact Laurie Tatlock if you have questions.<br/ >
 <a href="tel:+3036499857">303-649-9857</a><br />
-<a href="mailto:laurie@mulhernmre.com">laurie@mulhernmre.com</a>
+<a href="mailto:laurie@mulhernmre.com" target="_blank">laurie@mulhernmre.com</a>
