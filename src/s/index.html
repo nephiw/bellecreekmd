@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Halloween Spooktacular</title>
+  <style>
+    @font-face {
+      font-family: 'Feast';
+      src: url('/s/fonts/FEASFBRG.woff2') format('woff2'),
+      url('/s/fonts/FEASFBRG.woff') format('woff'),
+      url('s/fonts/FEASFBRG.TTF') format('truetype');
+    }
+
+    body {
+      font-size: 18px;
+      font-size: 2.5vw;
+      margin: 0;
+      background: #555A6F;
+      color: #E2DAE3;
+      font-family: "Feast", Arial, Helvetica, sans-serif;
+    }
+
+    @media screen and (min-width: 1024px) {
+      body {
+        font-size: 26px;
+      }
+    }
+
+    .wrapper {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-wrapper {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f9ef), to(#555A6F));
+      background-image: -webkit-linear-gradient(top, #f7f9ef, #555A6F);
+      background-image: -moz-linear-gradient(top, #f7f9ef, #555A6F);
+      background-image: linear-gradient(to bottom, #f7f9ef, #555A6F);
+    }
+
+    .hero {
+      padding: 0 20px;
+    }
+
+    .hero img,
+    .bottom-background img {
+      width: 100%;
+    }
+
+    .activity-details {
+      font-size: 1.4em;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .activity-details .light {
+      color: #FBBB42;
+    }
+
+    .activity-details .dark {
+      color: #D36D27;
+    }
+
+    .details-wrapper {
+      text-align: right;
+    }
+
+    .event-details {
+      font-size: 1.6em;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 30px;
+    }
+
+    .location {
+      color: #B09EB4;
+    }
+
+    .bottom-background {
+      background: url('/s/images/Background.svg') no-repeat bottom;
+      background-size: cover;
+    }
+
+    .float {
+      overflow: hidden;
+      clear: both;
+    }
+
+    .float.left {
+      float: left;
+    }
+
+    .float.right {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero-wrapper">
+    <div class="wrapper hero">
+      <img src="/s/images/Moon.svg">
+    </div>
+  </div>
+  <div class="wrapper content-wrapper">
+    <div class="float right">
+      <div class="event-details">
+        <div class="date">Saturday October 28, 2017</div>
+        <div class="time">5:00 - 7:00pm</div>
+        <div class="location">At the Belle Creek Family Center</div>
+      </div>
+    </div>
+    <div class="float left">
+      <div class="activity-details">
+        <div class="white">Fun for the whole family</div>
+        <div class="light">• Bounce House • Trunk or Treat •</div>
+        <div class="dark">• Assorted halloween Activites •</div>
+        <div class="light">• Music &amp; Dancing •</div>
+        <div class="dark">• Costume Contest •</div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper foot-wrapper">
+    <div class="bottom-background">
+      <img src="/s/images/Kids.svg" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
