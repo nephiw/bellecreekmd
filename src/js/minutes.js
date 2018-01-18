@@ -53,11 +53,7 @@
         day = getThirdWednesdayOfMonth(today);
       }
     }
-
-    if (month === 'June' && year === 2017) {
-      // date changed due to summer vacations
-      day = 14;
-    }
+    
     $('.next-meeting').text(`${month} ${day}, ${year}`);
   });
 }());
