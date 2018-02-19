@@ -2,4 +2,5 @@
 .vscode
 public
 node_modules
+firebase-debug.log
 uservars.json
