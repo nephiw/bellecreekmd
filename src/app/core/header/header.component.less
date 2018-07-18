@@ -1,0 +1,31 @@
+@teal: #1CD5B5;
+@dark-teal: #107F6C;
+@white: #FFFFFF;
+
+:host {
+  padding: 2em 0;
+
+  .title-icon.glyphicon {
+    color: @teal;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .title-label {
+    display: inline-block;
+  }
+  .title-content {
+    margin-bottom: 12px;
+  }
+}
+
+@media(max-width:640px) {
+  :host {
+    padding: 1em 0;
+  }
+}
+
+@media(max-width:320px) {
+  :host {
+    padding: 0.5em 0;
+  }
+}
