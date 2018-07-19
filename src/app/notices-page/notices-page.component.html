@@ -1,3 +1,8 @@
-<p>
-  notices-page works!
-</p>
+<section class="notices">
+  <div class="container">
+    <h2 class="section-title">Notices and Events</h2>
+    <div class="notice-container">
+      <bc-notice *ngFor="let notice of notices" [notice]="notice"></bc-notice>
+    </div>
+  </div>
+</section>
