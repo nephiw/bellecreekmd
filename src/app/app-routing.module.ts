@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'document.html', redirectTo: 'document' },
   { path: 'cec',      loadChildren: './cec-page/cec-page.module#CecPageModule' },
   { path: 'cec.html', redirectTo: 'cec' },
-  { path: 'notice',   loadChildren: './notices-page/notices-page.module#NoticesPageModule' },
+  { path: 'notices',   loadChildren: './notices-page/notices-page.module#NoticesPageModule' },
   { path: 'notices.html', redirectTo: 'notice' }
 ];
 

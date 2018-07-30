@@ -26,6 +26,8 @@
     "core-js": "^2.5.4",
     "ngx-markdown": "^6.1.0",
     "rxjs": "^6.0.0",
+    "smoothscroll-polyfill": "^0.4.3",
+    "web-animations-js": "^2.3.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
