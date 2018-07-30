@@ -1,10 +1,3 @@
----
-title: Tanabe Reservoir Update
-layout: notices.html
-collection: notices
-date: 2017-02-16
-draft: false
----
 # Tanabe Reservoir Update
 
 The final construction at this site, which will occur from July to November of 2017, is a $5 million investment into the property that will facilitate future operation of the reservoir. As you can see from the map, Denver Water is working on the existing fence, putting in road improvements and adding a few water control structures. Another major part of the project not seen on the map is a large amount of electrical work that will need to happen before they can operate the reservoir.
@@ -16,6 +9,6 @@ They will be replacing the fence running along property lines adjacent to Belle 
 2. To create a fire break to enhance the safety of the neighborhood from potential grass fires.
 3. To meet perimeter regulations for operational reservoirs.
  
-Residents can expect an increase in construction traffic and a visible presence of construction at the site. Feel free to contact Laurie Tatlock if you have questions.<br/ >
+Residents can expect an increase in construction traffic and a visible presence of construction at the site. Feel free to contact Laurie Tatlock if you have questions.<br />
 <a href="tel:+3036499857">303-649-9857</a><br />
 <a href="mailto:laurie@mulhernmre.com" target="_blank">laurie@mulhernmre.com</a>

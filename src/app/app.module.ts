@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MarkdownModule } from 'ngx-markdown';
 import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './home-page/home-page.module';
 
@@ -13,7 +15,11 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     HomePageModule,
-    CoreModule
+    CoreModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient
+    })
   ],
   declarations: [
     AppComponent

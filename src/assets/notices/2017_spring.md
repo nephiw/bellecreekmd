@@ -1,11 +1,3 @@
----
-title: Spring Cleaning 2017
-layout: notices.html
-collection: notices
-date: 2017-04-27
-draft: false
----
-
 # Time for spring cleaning
 Get your home and garden ready for the season with the following events. Proof of Commerce City Residency required at all events. No businesses or contractors allowed. <a href="http://c3gov.com/trash" target="_blank">Visit c3gov.com/trash for more information.</a>
 

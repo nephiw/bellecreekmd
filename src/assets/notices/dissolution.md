@@ -1,10 +1,3 @@
----
-title: Dissolution
-layout: notices.html
-collection: notices
-date: 2016-02-16
-draft: false
----
 # Masters Association Dissolution
 Belle Creek Metropolitan District No. 1 ("District") staff and legal counsel have advised the District Board that it would be a good idea to dissolve the Belle Creek Master Association ("Association"). This Association is no longer active, but it costs thousands of dollars per year to operate. If dissolved, this community will keep all of the same rules that it has today.
 

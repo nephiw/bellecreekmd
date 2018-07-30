@@ -1,10 +1,3 @@
----
-title: Tanabe Reservoir August Update
-layout: notices.html
-collection: notices
-date: 2017-08-30
-draft: false
----
 # Tanabe Reservoir August Update
 
 Denver Water has started a $5 million investment into its property next to Belle Creek. This project will facilitate future operation of the Tanabe reservoir, which will be located on that land. They are working on the existing fence, putting in private road improvements and adding a few water control structures. Another major part of the project not seen on the following map is a large amount of electrical work that will need to happen before we can operate the reservoir.

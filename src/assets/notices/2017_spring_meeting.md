@@ -1,11 +1,3 @@
----
-title: Spring Meeting 2017
-layout: notices.html
-collection: notices
-date: 2017-04-26
-draft: false
----
-
 # Belle Creek Community
 ## ANNUAL MEETING AGENDA
 

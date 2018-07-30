@@ -1,23 +1,20 @@
----
-title: Yard Sale 2017 Map
-layout: notices.html
-collection: notices
-date: 2017-06-09
-draft: false
----
-
 <style>
-    .item-table .row.title-row {
-        font-weight: bold;
-        border-left: none;
-        border-right: none;
-    }
+  .item-table {
+    margin-bottom: 100px;
+  }
 
-    .item-table .row {
-        border-bottom: 1px #333 solid;
-        border-left: 1px #333 solid;
-        border-right: 1px #333 solid;
-    }
+  .item-table .row.title-row {
+    margin-top: 30px;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+  }
+
+  .item-table .row {
+    border-bottom: 1px #333 solid;
+    border-left: 1px #333 solid;
+    border-right: 1px #333 solid;
+  }
 </style>
 
 # Belle Creek Community Yard Sale Map
@@ -26,7 +23,7 @@ Come join us for the Belle Creek Community Yard Sale and find yourself some new-
 
 <br>
 <a href="https://www.mapcustomizer.com/map/BelleCreekYardSale2017" target="_blank">
-![map of yard sales](/assets/notices/YardSaleLocations2017.png)
+  <img class="center" src="/assets/notices/YardSaleLocations2017.png" alt="map of yard sales">
 </a>
 
 <div class="item-table">

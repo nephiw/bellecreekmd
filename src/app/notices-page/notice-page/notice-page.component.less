@@ -1,0 +1,17 @@
+:host {
+  // Angular will not break view encapsulation without ng-deep https://github.com/jfcere/ngx-markdown/issues/56
+  .notice-content ::ng-deep img {
+    max-width: 100%;
+
+    &.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .notice-content {
+    margin-bottom: 60px;
+    display: block;
+  }
+}

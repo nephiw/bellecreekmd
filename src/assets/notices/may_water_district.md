@@ -1,10 +1,3 @@
----
-title: Tanabe Reservoir May Update
-layout: notices.html
-collection: notices
-date: 2017-05-16
-draft: false
----
 # Tanabe Reservoir May Update
 
 Denver Water has confirmed that the Tanabe Reservoir project will be constructed starting this July with construction continuing until November.  The exact construction dates should be available in early June.

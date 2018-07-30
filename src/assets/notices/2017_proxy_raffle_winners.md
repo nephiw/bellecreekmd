@@ -1,11 +1,3 @@
----
-title: Proxy Raffle Winners
-layout: notices.html
-collection: notices
-date: 2017-06-01
-draft: false
----
-
 # Proxy Raffle Winners!
 
 The winner of the $500 home depot gift card is Nicholas Barda.  The winner of the $100 gift card is Ricky Boatman.  The winners of the $50 gift card are Donald and Susan Richards.  Congratulations!  Contact Laurie Tatlock at <a href="mailto:laurie@mulhernmre.com">laurie@mulhernmre.com</a> to arrange for delivery of your prize. 

@@ -18,7 +18,7 @@ export class NoticesPageComponent {
     try {
       this.notices = await this.noticeService.getNotices();
       return this.notices;
-    } catch(error) {
+    } catch (error) {
       return [];
     }
   }
