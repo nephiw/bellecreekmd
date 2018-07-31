@@ -1,8 +1,8 @@
 <div class="notice">
-  <h3><a [routerLink]="['/notice', notice.path]">{{ notice.title }}</a></h3>
+  <h3><a [routerLink]="['/notices', notice.path]">{{ notice.title }}</a></h3>
   <div class="excerpt">
     <span [innerHTML]="notice.excerpt"></span>
     <div class="clearfix"></div>
-    <a  [routerLink]="['/notice', notice.path]" class="pull-right">...continue reading</a>
+    <a [routerLink]="['/notices', notice.path]" class="pull-right">...continue reading</a>
   </div>
 </div>

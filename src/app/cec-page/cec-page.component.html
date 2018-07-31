@@ -2,17 +2,27 @@
   <div class="container">
     <h2 class="section-title">Meetings</h2>
     <p>
-      The Covenant Enforcement Committee (CEC) meets once a month on the third wednesday. These meetings are open
-      to the public and we encourage the home owners join us if they want to hear what is going on or express
-      some other concern.
+      The Covenant Enforcement Committee (CEC) meets once a month on the third wednesday. These meetings are open to the public
+      and we encourage the home owners join us if they want to hear what is going on or express some other concern.
     </p>
     <bc-next-meeting></bc-next-meeting>
-    <!-- <ul class="meeting-notes">
-      {{#each collections.minutes}}
-        <li>
-          <a href="{{ link path }}">{{ title }}</a>
-        </li>
-      {{/each}}
-    </ul> -->
+
+    <div class="year-group">
+      <div class="btn-group" role="group">
+        <button type="button"
+                class="btn btn-default" 
+                [class.active]="y === year" 
+                *ngFor="let y of years" 
+                (click)="onYearChange(y)">
+          {{ y }}
+        </button>
+      </div>
+    </div>
+
+    <bc-minutes-calendar [months]="months" (monthChanged)="onMonthChanged($event)"></bc-minutes-calendar>
+
+    <div class="content" *ngIf="months?.length">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </section>

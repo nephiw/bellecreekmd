@@ -1,0 +1,10 @@
+<div class="calendar">
+  <div class="grid-list clickable">
+    <div class="grid-tile"
+         [class.active]="month === selectedMonth"
+         *ngFor="let month of months"
+         (click)="onMonthSelected(month)">
+      {{ month.date | bcMoment: 'MMM' }}
+    </div>
+  </div>
+</div>
