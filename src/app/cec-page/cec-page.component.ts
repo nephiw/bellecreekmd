@@ -25,7 +25,7 @@ export class CecPageComponent implements OnInit {
     this.months = this.minutesService.getMinutesByYear(this.years[this.years.length - 1]);
   }
 
-  public onYearChange(year: string): void {
+  public onYearChanged(year: string): void {
     if (this.year !== year) {
       this.year = year;
       this.months = this.minutesService.getMinutesByYear(year);

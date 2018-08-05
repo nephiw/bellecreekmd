@@ -8,26 +8,14 @@
     <bc-next-meeting></bc-next-meeting>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-3">
-        <div class="year-group">
-          <div class="btn-group" role="group">
-            <button type="button"
-                    class="btn btn-default" 
-                    [class.active]="y === year" 
-                    *ngFor="let y of years" 
-                    (click)="onYearChange(y)">
-              {{ y }}
-            </button>
-          </div>
-        </div>
+      <div class="floating-controls">
+        <bc-minutes-year-selector [years]="years" (yearChanged)="onYearChanged($event)"></bc-minutes-year-selector>
         <bc-minutes-calendar [months]="months" (monthChanged)="onMonthChanged($event)"></bc-minutes-calendar>
       </div>
-      <div class="col-sm-9">
+      <div class="wraparound-content">
         <div class="content" *ngIf="months?.length">
           <router-outlet></router-outlet>
         </div>
       </div>
-    </div>
   </div>
 </section>

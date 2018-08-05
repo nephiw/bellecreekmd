@@ -6,8 +6,8 @@ import { Component, Input, Output, EventEmitter, OnChanges, SimpleChanges } from
   styleUrls: ['./minutes-calendar.component.less']
 })
 export class MinutesCalendarComponent implements OnChanges {
-  @Input() public months: any[];
   @Output() public monthChanged: EventEmitter<string> = new EventEmitter();
+  @Input() public months: any[];
 
   public selectedMonth: any;
 

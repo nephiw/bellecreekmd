@@ -1,0 +1,11 @@
+<div class="year-group">
+  <div class="btn-group" role="group">
+    <button type="button"
+            class="btn btn-default"
+            [class.active]="year === selectedYear"
+            *ngFor="let year of years"
+            (click)="onYearChange(year)">
+      {{ year }}
+    </button>
+  </div>
+</div>

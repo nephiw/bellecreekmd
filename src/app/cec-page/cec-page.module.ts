@@ -10,6 +10,7 @@ import { MinutesCalendarComponent } from './minutes-calendar';
 import { MinutesPageComponent } from './minutes-page';
 import { MinutesService } from './minutes.service';
 import { MomentPipe } from './moment';
+import { MinutesYearSelectorComponent } from './minutes-year-selector/minutes-year-selector.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { MomentPipe } from './moment';
     NextMeetingComponent,
     MinutesCalendarComponent,
     MinutesPageComponent,
-    MomentPipe
+    MomentPipe,
+    MinutesYearSelectorComponent
   ],
   entryComponents: [
     CecPageComponent
