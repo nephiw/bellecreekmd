@@ -18,7 +18,7 @@ export class MinutesCalendarComponent implements OnChanges {
 
   public ngOnChanges(changes: SimpleChanges): void {
     if (changes.months) {
-      this.selectedMonth = changes.months[0];
+      this.selectedMonth = this.months[0];
     }
   }
 }

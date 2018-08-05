@@ -61,7 +61,7 @@ export class MinutesService {
   // }
 
   // TODO: stop lazy loading each time - once the minutes are fetched, we should just work on the information recieved.
-  public getMinutesByYear(year: string): Observable<CECMinute[]> {
+  public getMinutesByYear(year: string): CECMinute[] {
     const minutesInYear: CECMinute[] = minutes.filter((meetingMinute) => {
       return meetingMinute.date.includes(year);
     }).map((meetingMinute) => {
@@ -72,16 +72,16 @@ export class MinutesService {
       };
     });
 
-    return of(minutesInYear);
+    return minutesInYear;
   }
 
-  public getYears(): Observable<string[]> {
+  public getYears(): string[] {
     const yearSet = {};
     minutes.forEach((minute) => {
       const year = minute.filename.slice(0, 4);
       yearSet[year] = true;
     });
 
-    return of(Object.keys(yearSet));
+    return Object.keys(yearSet);
   }
 }

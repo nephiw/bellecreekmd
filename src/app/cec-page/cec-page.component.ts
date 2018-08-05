@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MinutesService } from './minutes.service';
 import { Router } from '@angular/router';
 
@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './cec-page.component.html',
   styleUrls: ['./cec-page.component.less']
 })
-export class CecPageComponent {
-
+export class CecPageComponent implements OnInit {
   public months: any[];
   public years: string[];
   public year: string;
@@ -19,36 +18,20 @@ export class CecPageComponent {
   constructor(
     private minutesService: MinutesService,
     private router: Router
-  ) {
-    const getYearsSubscription = this.minutesService.getYears().subscribe((years) => {
-      this.years = years;
+  ) {}
 
-      if (getYearsSubscription) {
-        getYearsSubscription.unsubscribe();
-      }
-      const getMinutesSubscription = this.minutesService.getMinutesByYear(this.years[this.years.length - 1]).subscribe((months: any[]) => {
-        this.months = months;
-
-        if (getMinutesSubscription) {
-          getMinutesSubscription.unsubscribe();
-        }
-      });
-    });
+  public ngOnInit(): void {
+    this.years = this.minutesService.getYears();
+    this.months = this.minutesService.getMinutesByYear(this.years[this.years.length - 1]);
   }
 
   public onYearChange(year: string): void {
     if (this.year !== year) {
       this.year = year;
-      const getMinutesSubscription = this.minutesService.getMinutesByYear(year).subscribe((months: any[]) => {
-        this.months = months;
-        if (months[0]) {
-          this.router.navigate(['cec', 'minutes', this.months[0].filename]);
-        }
-
-        if (getMinutesSubscription) {
-          getMinutesSubscription.unsubscribe();
-        }
-      });
+      this.months = this.minutesService.getMinutesByYear(year);
+      if (this.months[0]) {
+        this.onMonthChanged(this.months[0].filename);
+      }
     }
   }
 
