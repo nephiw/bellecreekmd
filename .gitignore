@@ -3,5 +3,7 @@
 .firebase
 public
 node_modules
-firebase-debug.log
 uservars.json
+
+**/*.cache
+**/*.log

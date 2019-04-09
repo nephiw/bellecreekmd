@@ -45,6 +45,29 @@
   z-index: 1;
 }
 
+.floating-image {
+  float: left;
+  margin: 0 30px 30px 0;
+  width: 50%;
+}
+
+.floating-image img {
+  width: 100%;
+}
+
+.floating-image.oval {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media(max-width:768px) {
+  .floating-image {
+    display: block;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
