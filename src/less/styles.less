@@ -49,21 +49,23 @@
   float: left;
   margin: 0 30px 30px 0;
   width: 50%;
+  max-width: 383px;
+  
+  img {
+    width: 100%;
+  }
+
+  &.rounded {
+    border-radius: 12px;
+    overflow: hidden;
+  }
 }
 
-.floating-image img {
-  width: 100%;
-}
-
-.floating-image.oval {
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .floating-image {
     display: block;
-    width: 100%;
+    float: none;
+    width: inherit;
     margin: 0 auto 30px;
   }
 }
