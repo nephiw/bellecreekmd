@@ -1,6 +1,15 @@
 @teal: #1CD5B5;
 @dark-teal: #107F6C;
 @white: #FFFFFF;
+@dark-orchid: #9932CC;
+
+h3.event-cta {
+  background-color: @dark-orchid;
+  padding: 10px 15px;
+  color: @white;
+  text-align: center;
+}
+
 
 /* agenda info page */
 .centered-header {
@@ -46,8 +55,6 @@
 }
 
 .floating-image {
-  float: left;
-  margin: 0 30px 30px 0;
   width: 50%;
   max-width: 383px;
   
@@ -59,6 +66,16 @@
     border-radius: 12px;
     overflow: hidden;
   }
+
+  &.right {
+    margin: 0 0 30px 30px;
+    float: right;
+  }
+
+  &.left {
+    margin: 0 30px 30px 0;
+    float: left;
+  }
 }
 
 @media (max-width: 768px) {
@@ -66,7 +83,11 @@
     display: block;
     float: none;
     width: inherit;
-    margin: 0 auto 30px;
+
+    &.right, &.left {
+      float: none;
+      margin: 0 auto 30px auto;
+    }
   }
 }
 
