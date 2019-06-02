@@ -5,5 +5,5 @@ public
 node_modules
 uservars.json
 
-**/*.cache
-**/*.log
+*.cache
+*.log
