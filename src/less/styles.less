@@ -103,6 +103,11 @@ section {
 p {
   margin: 0 0.5em 2em;
 }
+
+// if a list follows a paragraph, cut down on margin
+p + ul {
+  margin-top: -1.5em;
+} 
 h2 {
   margin-top: 26px;
 }
