@@ -1,15 +1,49 @@
-@teal: #1CD5B5;
-@dark-teal: #107F6C;
+@hc-dark-grey: #3B444B;
+@mc-dark-grey: #73767C;
+@lc-dark-grey: #93959A;
+
+@hc-dark-green: #006647;
+@mc-dark-green: #14855F;
+@lc-dark-green: #21A67A;
+
+@hc-light-green: #61F2C1;
+@mc-light-green: #09C889;
+
+@hc-dark-blue: #005E8C;
+@mc-dark-blue: #007BC2;
+@lc-dark-blue: #2B9DD6;
+
+@hc-dark-red: #B50600;
+@mc-dark-red: #E32B24;
+@lc-dark-red: #EF3934;
+
+@hc-dark-purple: #8325C1;
+@mc-dark-purple: #C729D1;
+
 @white: #FFFFFF;
 @dark-orchid: #9932CC;
 
 h3.event-cta {
-  background-color: @dark-orchid;
+  background-color: @hc-dark-purple;
   padding: 10px 15px;
   color: @white;
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .row.equal {
+    display: flex;
+    flex-wrap: wrap;
+
+    article {
+      height: 100%;
+    }
+
+    p {
+      margin: 0 0 0.5em 0.5em;
+    }
+  }
+}
 
 /* agenda info page */
 .centered-header {
@@ -113,10 +147,10 @@ h2 {
 }
 a {
   font-style: italic;
-  color: @dark-teal;
+  color: @hc-dark-green;
 }
 a:hover {
-  color: @teal;
+  color: @mc-dark-green;
 }
 .section-title {
   text-align: center;
@@ -124,7 +158,7 @@ a:hover {
 .header {
   padding: 2em 0;
   .title-icon.glyphicon {
-    color: @teal;
+    color: @mc-dark-green;
     display: inline-block;
     margin-right: 10px;
   }
@@ -153,12 +187,12 @@ nav.navbar a {
   font-style: normal;
 }
 nav.navbar.navbar-default.green-bar {
-  background-color: @teal;
+  background-color: @mc-dark-green;
   padding: 0;
   margin: 0;
 }
 .header_nav {
-  background-color: @teal;
+  background-color: @mc-dark-green;
 }
 .navbar-default .navbar-nav>li {
   padding: 0;
@@ -166,11 +200,11 @@ nav.navbar.navbar-default.green-bar {
 }
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a {
-  padding: 16px 52px;
+  padding: 1em 2em;
   color: @white !important;
   font-weight: 500;
   font-size: 0.75em;
-  background: @teal;
+  background: @mc-dark-green;
   border-right: 1px dotted @white;
 }
 .navbar-default .navbar-nav>li>a:focus,
@@ -225,27 +259,32 @@ nav.navbar.navbar-default.green-bar {
 /*-- footer --*/
 .footer {
   padding: 2em 0;
-  background-color: #3b444b;
-  a {
-    color: @dark-teal;
+  background-color: @hc-dark-grey;
+
+  a, a:hover, a:focus, a:visited {
+    color: @hc-light-green;
+    @mc-light-green: #09C889;
   }
   p {
-    color: #7F8D98;
+    color: @hc-light-green;
+    @mc-light-green: #09C889;
     line-height: 1.2em;
     margin: 0.3em 0;
   }
   h2 {
-    color: @teal;
+    color: @hc-light-green;
     font-weight: 700;
   }
   address {
-    color: #7F8D98;
+    color: @hc-light-green;
   }
 }
+
+/*-- Media Queries --*/
 @media(max-width:1320px) {
   .navbar-default .navbar-nav>li>a:focus,
   .navbar-default .navbar-nav>li>a {
-    padding: 16px 34px ! important;
+    padding: 1em 1.3em ! important;
   }
 }
 @media(max-width:1024px) {
@@ -256,7 +295,7 @@ nav.navbar.navbar-default.green-bar {
 @media(max-width:768px) {
   .navbar-default .navbar-nav>li>a:focus,
   .navbar-default .navbar-nav>li>a {
-    padding: 16px 16px ! important;
+    padding: 1em 1em ! important;
   }
 
   body {
@@ -272,7 +311,7 @@ nav.navbar.navbar-default.green-bar {
   }
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
-    background-color: @teal ! important;
+    background-color: @mc-dark-green !important;
   }
   .navbar-default .navbar-nav>li>a:focus,
   .navbar-default .navbar-nav>li>a {
