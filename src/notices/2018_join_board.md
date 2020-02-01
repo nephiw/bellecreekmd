@@ -6,7 +6,8 @@ date: 2018-01-31
 draft: false
 ---
 
-# Commerce City "Rules of the Streets"
+# A Call for Nominations
+
 **Notice is hereby given** that an election will be held on Tuesday, May 8, 2018, between the hours of 7:00 a.m. and 7:00 p.m. At that time, two (2) directors will be elected to serve four-year terms. Eligible electors of the Belle Creek Metropolitan District No. 1 interested in serving on the board of directors may [download a Self-Nomination and Acceptance form ](/assets/notices/Self-NominationForm.rtf) or obtain from the District Designated Election Official (DEO):
 <p style="margin-left: 60px;">
     Laurie Tatlock
