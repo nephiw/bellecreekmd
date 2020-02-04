@@ -68,6 +68,10 @@ var ms = Metalsmith(__dirname)
     src: 'lib',
     dest: '.'
   }))
+  .use(copy({
+    src: '/node_modules/stickybits/dist/stickybits.min.js',
+    dest: './js/stickybits.min.js'
+  }))
   .use(ignore('less/*'));
 
 if (options.serve) {

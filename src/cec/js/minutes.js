@@ -13,7 +13,7 @@
     return firstWednesday + 14;
   }
 
-  $(() => {
+  bc.utils.ready(function() {    
     const MEETING_START_TIME = 18, // 24 hour time
           MONTH_NAMES = [
             'January',
@@ -54,6 +54,6 @@
       }
     }
     
-    $('.next-meeting').text(`${month} ${day}, ${year}`);
+    document.querySelector('.next-meeting').textContent = `${month} ${day}, ${year}`;
   });
 }());
