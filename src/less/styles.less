@@ -1,27 +1,27 @@
-@hc-dark-grey: #3B444B;
-@mc-dark-grey: #73767C;
-@lc-dark-grey: #93959A;
+@hc-dark-grey: #3b444b;
+@mc-dark-grey: #73767c;
+@lc-dark-grey: #93959a;
 
 @hc-dark-green: #006647;
-@mc-dark-green: #14855F;
-@lc-dark-green: #21A67A;
+@mc-dark-green: #14855f;
+@lc-dark-green: #21a67a;
 
-@hc-light-green: #61F2C1;
-@mc-light-green: #09C889;
+@hc-light-green: #61f2c1;
+@mc-light-green: #09c889;
 
-@hc-dark-blue: #005E8C;
-@mc-dark-blue: #007BC2;
-@lc-dark-blue: #2B9DD6;
+@hc-dark-blue: #005e8c;
+@mc-dark-blue: #007bc2;
+@lc-dark-blue: #2b9dd6;
 
-@hc-dark-red: #B50600;
-@mc-dark-red: #E32B24;
-@lc-dark-red: #EF3934;
+@hc-dark-red: #b50600;
+@mc-dark-red: #e32b24;
+@lc-dark-red: #ef3934;
 
-@hc-dark-purple: #8325C1;
-@mc-dark-purple: #C729D1;
+@hc-dark-purple: #8325c1;
+@mc-dark-purple: #c729d1;
 
-@white: #FFFFFF;
-@dark-orchid: #9932CC;
+@white: #ffffff;
+@dark-orchid: #9932cc;
 
 h3.event-cta {
   background-color: @hc-dark-purple;
@@ -56,7 +56,8 @@ h3.event-cta {
     font-style: normal;
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     text-align: center;
   }
 
@@ -91,7 +92,7 @@ h3.event-cta {
 .floating-image {
   width: 50%;
   max-width: 383px;
-  
+
   img {
     width: 100%;
   }
@@ -118,7 +119,8 @@ h3.event-cta {
     float: none;
     width: inherit;
 
-    &.right, &.left {
+    &.right,
+    &.left {
       float: none;
       margin: 0 auto 30px auto;
     }
@@ -141,7 +143,7 @@ p {
 // if a list follows a paragraph, cut down on margin
 p + ul {
   margin-top: -1.5em;
-} 
+}
 h2 {
   margin-top: 26px;
 }
@@ -195,12 +197,12 @@ nav.navbar.navbar-default.green-bar {
   background-color: @mc-dark-green;
   z-index: 1;
 }
-.navbar-default .navbar-nav>li {
+.navbar-default .navbar-nav > li {
   padding: 0;
   text-align: center;
 }
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a {
   padding: 1em 2em;
   color: @white !important;
   font-weight: 500;
@@ -208,8 +210,8 @@ nav.navbar.navbar-default.green-bar {
   background: @mc-dark-green;
   border-right: 1px dotted @white;
 }
-.navbar-default .navbar-nav>li>a:focus,
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
   background: #020202 !important;
   border-radius: 2px;
   transition: 0.6s all;
@@ -262,7 +264,10 @@ nav.navbar.navbar-default.green-bar {
   padding: 2em 0;
   background-color: @hc-dark-grey;
 
-  a, a:hover, a:focus, a:visited {
+  a,
+  a:hover,
+  a:focus,
+  a:visited {
     color: @hc-light-green;
   }
   p {
@@ -280,45 +285,45 @@ nav.navbar.navbar-default.green-bar {
 }
 
 /*-- Media Queries --*/
-@media(max-width:1320px) {
-  .navbar-default .navbar-nav>li>a:focus,
-  .navbar-default .navbar-nav>li>a {
-    padding: 1em 1.3em ! important;
+@media (max-width: 1320px) {
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a {
+    padding: 1em 1.3em !important;
   }
 }
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
   body {
     font-size: 18px;
   }
 }
-@media(max-width:768px) {
-  .navbar-default .navbar-nav>li>a:focus,
-  .navbar-default .navbar-nav>li>a {
-    padding: 1em 1em ! important;
+@media (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a {
+    padding: 1em 1em !important;
   }
 
   body {
     font-size: 16px;
   }
 }
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: @white ! important;
+    background-color: @white !important;
   }
   .navbar-default .navbar-toggle {
-    border-color: @white ! important;
+    border-color: @white !important;
   }
   .navbar-default .navbar-toggle:focus,
   .navbar-default .navbar-toggle:hover {
     background-color: @mc-dark-green !important;
   }
-  .navbar-default .navbar-nav>li>a:focus,
-  .navbar-default .navbar-nav>li>a {
-    border-right: none ! important;
+  .navbar-default .navbar-nav > li > a:focus,
+  .navbar-default .navbar-nav > li > a {
+    border-right: none !important;
     font-size: 1em;
   }
 }
-@media(max-width:640px) {
+@media (max-width: 640px) {
   .header {
     padding: 1em 0;
   }
@@ -327,7 +332,7 @@ nav.navbar.navbar-default.green-bar {
     font-size: 14px;
   }
 }
-@media(max-width:320px) {
+@media (max-width: 320px) {
   .header {
     padding: 0.5em 0;
   }
