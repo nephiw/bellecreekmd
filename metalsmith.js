@@ -64,14 +64,15 @@ var ms = Metalsmith(__dirname)
   .use(inplace({
     engine: 'handlebars'
   }))
-  .use(copy({
-    src: 'lib',
-    dest: '.'
-  }))
-  .use(copy({
-    src: '/node_modules/stickybits/dist/stickybits.min.js',
-    dest: './js/stickybits.min.js'
-  }))
+  .use(copy([
+    {
+      src: 'lib',
+      dest: '.'
+    }, {
+      src: '/node_modules/stickybits/dist/stickybits.min.js',
+      dest: './js/stickybits.min.js'
+    }
+  ]))
   .use(ignore('less/*'));
 
 if (options.serve) {
