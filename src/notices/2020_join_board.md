@@ -10,7 +10,7 @@ draft: false
 
 TO WHOM IT MAY CONCERN, and, particularly, to the electors of the Belle Creek Metropolitan District No. 1 of Adams County, Colorado.
 
-NOTICE IS HEREBY GIVEN that an election will be held on the 5th day of May, 2020, between the hours of 7:00 a.m. and 7:00 p.m.  At that time, 3 directors will be elected to serve 3-year terms and 1 director will be elected to serve a 2-year term.  Eligible electors of the Belle Creek Metropolitan District No. 1 interested in serving on the board of directors may obtain a Self-Nomination and Acceptance form from the District Designated Election Official (DEO): 
+NOTICE IS HEREBY GIVEN that an election will be held on the 5th day of May, 2020, between the hours of 7:00 a.m. and 7:00 p.m.  At that time, 3 directors will be elected to serve 3-year terms and 1 director will be elected to serve a 2-year term.  Eligible electors of the Belle Creek Metropolitan District No. 1 interested in serving on the board of directors may obtain a <a href="/assets/2020/2020SelfNominationForm.docx" target="download">Self-Nomination and Acceptance form (docx)</a> from the District Designated Election Official (DEO): 
 <p style="margin-left: 3em;">
     Laurie Tatlock
     <br>188 Inverness Drive West, Suite 140
