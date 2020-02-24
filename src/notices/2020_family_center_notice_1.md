@@ -24,7 +24,7 @@ From the opening of the Belle Creek Family Center in 2004 until 2014, the Family
 The Metro District Board decided not to renew the contract with the YMCA going forward and beginning on April 1, 2020, the Metro District will be taking over the operations of the Family Center and will likely contract with an outside organization for school age programming and vacation child care. 
 
 Here are the District’s goals for this transition:
-1. Hire any current employees who want to continue to work with this community at the family center.  Note that they work for the YMCA and the Metro District has no say in if they move over or continue to work with the YMCA. We suggest they do what is best for them and their families.
+1. Hire any current employees who want to continue to work with this community at the Family Center.  Note that they work for the YMCA and the Metro District has no say in if they move over or continue to work with the YMCA. We suggest they do what is best for them and their families.
 1. Keep the same programming that is currently available and work to improve programming in the future.
 1. Not increase fees for programming.  (Alphabet Soup, Before/After Care, etc),
 1. Improve communication with the community about all of the above.
