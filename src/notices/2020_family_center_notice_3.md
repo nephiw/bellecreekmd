@@ -9,7 +9,7 @@ draft: false
 
 ![belle creek family center](/assets/2020/family_center_sign.png)
 
-The Belle Creek Metro District has officially started hiring! [Job descriptions and applications are posted in this notice](https://bellecreekmd.org/notices/apply-to-work-at-the-family-center/). Please consider applying or forwarding to a qualified friend.
+The Belle Creek Metro District has officially started hiring! [Job descriptions and applications are posted in this notice](https://bellecreek.org/notices/apply-to-work-at-the-family-center/). Please consider applying or forwarding to a qualified friend.
 
 We are also looking into hiring a Transition Facilitator - someone who can work at the Family Center and ease the change. This person will help us build a positive culture. We are trying to make Family Center jobs positions that people want to have and keep, working early to promote this will hopefully lead to a Family Center with respect for the staff and the community.
 

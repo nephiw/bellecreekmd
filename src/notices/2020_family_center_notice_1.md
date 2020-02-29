@@ -30,12 +30,12 @@ Here are the District’s goals for this transition:
 1. Improve communication with the community about all of the above.
 
 
-This process will not be finished overnight.  Many things have to change including, but not limited to; the website, the check in/out process, registration for programs, HR for employees (salary, benefits, etc) and more. The District wants to be as transparent as possible, but we also must consider contractual and legal requirements as we move through this transition.  We are available to answer your questions. Please feel free to contact the District Manager, Laurie Tatlock (laurie@mulhernmre.com), me (nephi@bellecreekmd.org), and/or any of the District Board Members.
+This process will not be finished overnight.  Many things have to change including, but not limited to; the website, the check in/out process, registration for programs, HR for employees (salary, benefits, etc) and more. The District wants to be as transparent as possible, but we also must consider contractual and legal requirements as we move through this transition.  We are available to answer your questions. Please feel free to contact the District Manager, Laurie Tatlock (laurie@mulhernmre.com), me (nephi@bellecreek.org), and/or any of the District Board Members.
 
-Updates will be posted on our website at https://bellecreekmd.org as development occur and decisions are made.
+Updates will be posted on our website at https://bellecreek.org as development occur and decisions are made.
 
 Thank you for your patience and understanding.
 
 Nephi Wright<br />
 Belle Creek Metro District No. 1 President<br />
-nephi@bellecreekmd.org
+nephi@bellecreek.org
