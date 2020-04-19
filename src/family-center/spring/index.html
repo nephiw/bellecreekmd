@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 2.4em;
+        }
+
+        h2 {
+            font-size: 1.6em;
+        }
+
+        section {
+            display: block;
+            position: relative;
+            height: 100vh;
+        }
+
+        .background-image {
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1125px;
+            margin: 2em auto;
+            position: relative;
+            padding: 1em;
+        }
+
+        .link-list {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .link-list li {
+            margin: 1em;
+            background-color: white;
+            border: dashed 2px green;
+            display: inline-block;
+            padding: 1.3em;
+            width: 16em;
+            height: 4em;
+        }
+
+        @media (max-width: 700px) {
+            .link-list {
+                display: block;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+        }
+
+        @media (max-width: 700px) {
+            section {
+                height: auto;
+            }
+        }
+
+        @media (min-width: 830px) {
+            p {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <img class="background-image" src="images/image1.png" />
+        <div class="container">
+            <h1>Belle Creek Community</h1>
+            <h2>Easter / Spring links</h2>
+            <p>Looking for a fun craft, recipe or something fun to do with your family in the neighborhood? Check out
+                the links below!</p>
+            <ul class="link-list">
+                <li><a href="https://innerchildfun.com/2020/03/social-distancing-egg-hunt-easter-activity.html"
+                        target="_blank">
+                        Social distance neighbor Egg Hunt
+                    </a></li>
+                <li>
+                    <a href="https://thepurposefulnest.com/spring-scavenger-hunt-printable/" target="_blank">Spring
+                        Scavenger Hunt</a>
+                </li>
+                <li>
+                    <a href="https://www.worthwritingfor.com/family-easter-stuck-at-home/" target="_blank">
+                        Easter Family activity Ideas</a>
+                </li>
+                <li><a href="http://bmg-music-club.info/pin4564.html" target="_blank">Spring Coloring Pages 1</a><br>
+                    <a href="https://pwrshare.info/springs-coloring-pages/" target="_blank">Spring Coloring Pages 2</a>
+                </li>
+                <li><a href="https://www.blessthismessplease.com/spring-snack-mix-2/" target="_blank">Easter snack Mix
+                        recipe</a></li>
+                <li><a href="https://rose.ephotos.org/peeps-fruit-kabobs-for-easter/" target="_blank">Peep Fruit Kabobs
+                        Recipe</a></li>
+                <li><a href="https://princesspinkygirl.com/smore-bars/" target="_blank">Smore Bars</a><br>
+                    <a href="https://omgchocolatedesserts.com/strawberry-french-toast-muffins/" target="_blank">
+                        Strawberry French Toast Muffin
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+</body>
+
+</html>
