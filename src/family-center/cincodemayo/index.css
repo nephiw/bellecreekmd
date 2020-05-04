@@ -1,0 +1,103 @@
+/* typography */
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+a {
+  color: #FF0000;
+  text-decoration: underline;
+  padding: 0.2em 0.5em;
+  display: block;
+}
+
+a:hover {
+  color: #FF3333;
+}
+
+.invert {
+  color: #FFFFFF;
+}
+
+.invert a {
+  color: #FFBBBB;
+}
+
+.invert a:hover {
+  color: #FF6666;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+  font-size: 2em;
+}
+
+h2 {
+  padding-bottom: 0.45em;
+  font-size: 1.8em;
+}
+
+h2 {
+  padding-bottom: 0.4em;
+  font-size: 1.6em;
+}
+
+h2 {
+  padding-bottom: 0.35em;
+  font-size: 1.4em;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
+section {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: solid black 1px;
+}
+
+header {
+  padding: 0 1em;
+  display: block;
+  margin: 1em auto;
+  width: 1280px;
+  max-width: 100%;
+
+  font-size: 2em;
+  line-height: 1;
+}
+
+header h1 {
+  max-width: calc(100% - 2em);
+}
+
+.grid-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid-item {
+  width: 100%;
+  min-height: 600px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.content {
+  padding: 2em;
+  overflow: auto;
+  height: calc(100% - 4em);
+}
+
+@media (min-width: 800px) {
+  .grid-item {
+    width: 33.3%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+  }
+}

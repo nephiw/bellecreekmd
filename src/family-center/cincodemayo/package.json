@@ -1,0 +1,16 @@
+{
+  "name": "bellecreek",
+  "version": "0.1.0",
+  "description": "A website design idea of the Belle Creek Community website",
+  "main": "index.html",
+  "repository": "https://bellecreek.org",
+  "author": "Nephi Wright <nephi@bellecreek.org>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "serve": "browser-sync start --server --files \"*.html, *.css\""
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
