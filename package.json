@@ -25,7 +25,7 @@
     "metalsmith-serve": "0.0.7",
     "metalsmith-static": "0.0.5",
     "metalsmith-watch": "^1.0.3",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "stickybits": "^3.7.3"
   }
 }
